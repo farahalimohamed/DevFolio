@@ -1,0 +1,238 @@
+body {
+    background-color: #f5f5f5;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav .navbar-nav a {
+    position: relative;
+    color: #fff;
+    padding-bottom: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav .navbar-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 8px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+nav .navbar-nav a:hover::after {
+    width: 50%;
+}
+
+nav .deep-menu li {
+    display: none !important;
+}
+
+nav .deep-menu:hover li {
+    display: inline-block !important;
+}
+
+
+.bg-image {
+    background-image: url('imgs/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.648);
+}
+
+.job {
+    display: inline-block;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation: typing 3.5s steps(20, end) infinite, blinking 1s infinite;
+    font-size: 1.6rem;
+    width: 0;
+    -webkit-animation: typing 3.5s steps(20, end) infinite, blinking 1s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 110%
+    }
+}
+
+@keyframes blinking {
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: white;
+    }
+}
+
+.progress {
+    border-radius: 0;
+    margin: 0.5rem 0 1.2rem 0;
+    height: 0.7rem;
+}
+
+.about-title::after {
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.2rem;
+    background-color: #0078FF;
+    margin-top: 0.5rem;
+}
+
+.main-header::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #0078FF;
+    margin-top: 0.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+}
+
+.inner .circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inner:hover .circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.numbers-section {
+    background-image: url(imgs/counters-bg.jpg);
+}
+
+.paralax-mf {
+    position: relative;
+    padding: 8rem 0;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+}
+
+.num-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.portfolio-date {
+    font-size: 12px;
+}
+
+
+.portfolio-box .portfolio-img {
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+
+.portfolio-box:hover .portfolio-img {
+    transform: scale(1.1);
+}
+
+.profile-section {
+    background-image: url(imgs/overlay-bg.jpg);
+}
+
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.contact-section {
+    background-image: url(imgs/overlay-bg.jpg);
+}
+
+.circle-icon {
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 0 5px #0078ff;
+}
+
+.circle-icon {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icons .circle-icon:hover {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.footer-section {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 25px 0px;
+    background: rgb(0, 98, 211);
+}
+
+.blog-title {
+    transition: color 0.5s ease;
+}
+
+.blog-title:hover {
+    color: #0078ff;
+}
