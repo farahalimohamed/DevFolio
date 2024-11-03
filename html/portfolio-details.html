@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/portfolio-details.css">
+</head>
+
+
+<body>
+    <div id="nav-placeholder"></div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+        <!-- header section -->
+        <section>
+            <div class="portfolio-details paralax-mf bg-image z-1">
+                <div class="overlay-mf z-n1"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="title-box text-center text-white">
+                                <h2 class="display-4 fw-semibold text-uppercase mb-3">Portfolio Details</h2>
+                                <a href="../index.html" class="text-decoration-none text-white"><span>Home</span></a>
+                                <span class="px-2 details-subtitle">/</span>
+                                <span class="details-subtitle">Portfolio Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio details section -->
+        <section class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/imgs/portfolio-details-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/imgs/portfolio-details-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/imgs/portfolio-details-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-indicators position-static pt-3" id="portfolio-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="inner bg-white p-5 shadow-sm">
+                            <h3 class="fs-5 fw-bold border-bottom pb-3">Project information</h3>
+                            <div class="project-info pt-3">
+                                <p class="text-secondary"><span class="fw-medium text-black">Category:</span> Web design</p>
+                                <p class="text-secondary"><span class="fw-medium text-black">Client:</span> ASU Company</p>
+                                <p class="text-secondary"><span class="fw-medium text-black">Project date:</span> 01 March, 2020</p>
+                                <span class="fw-medium text-black">Project URL:</span> <a href="#" class="text-decoration-none">www.example.com</a>
+                            </div>
+                        </div>
+                        <div class="project-desc pt-3">
+                            <h2 class="fs-3 fw-bold pb-3">This is an example of portfolio detail</h2>
+                            <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem
+                            repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis
+                            tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section -->
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            try {
+                const response = await fetch('navbar.html');
+                const data = await response.text();
+                document.getElementById('nav-placeholder').innerHTML = data;
+            } catch (error) {
+                console.error('Error loading navbar:', error);
+            }
+        });
+        window.addEventListener('scroll', function () {
+            document.querySelector('nav').classList.toggle('header-scrolled', window.scrollY > 50);
+        });
+        document.addEventListener('DOMContentLoaded', async function () {
+            try {
+                const response = await fetch('footer.html');
+                const data = await response.text();
+                document.getElementById('footer-placeholder').innerHTML = data;
+            } catch (error) {
+                console.error('Error loading navbar:', error);
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

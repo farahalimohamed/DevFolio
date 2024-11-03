@@ -34,7 +34,7 @@ nav {
 }
 
 .bg-image {
-    background-image: url('imgs/hero-bg.jpg');
+    background-image: url('../imgs/hero-bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -132,7 +132,7 @@ nav {
 }
 
 .numbers-section {
-    background-image: url(imgs/counters-bg.jpg);
+    background-image: url(../imgs/counters-bg.jpg);
 }
 
 .paralax-mf {
@@ -180,17 +180,17 @@ nav {
 }
 
 .profile-section {
-    background-image: url(imgs/overlay-bg.jpg);
+    background-image: url(../imgs/overlay-bg.jpg);
 }
 
-.carousel .carousel-indicators button {
+.carousel #slideshow-indicators button {
     width: 10px;
     height: 10px;
     border-radius: 100%;
 }
 
 .contact-section {
-    background-image: url(imgs/overlay-bg.jpg);
+    background-image: url(../imgs/overlay-bg.jpg);
 }
 
 .circle-icon {
