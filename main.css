@@ -170,7 +170,7 @@ nav {
 }
 
 
-.portfolio-img img{
+.portfolio-img img {
     transition: all 0.5s ease;
     object-fit: cover;
 }
@@ -214,6 +214,14 @@ nav {
     color: #fff;
     background-color: #0078ff;
     box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.contact-btn:hover {
+    border-color: transparent;
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #3393ff;
+    box-shadow: 0 0 0 5px #cde1f8;
 }
 
 .footer-section {
