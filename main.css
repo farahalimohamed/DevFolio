@@ -7,15 +7,18 @@ nav {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-nav .navbar-nav a {
+.nav-pills .nav-link {
     position: relative;
     color: #fff;
     padding-bottom: 5px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-nav .navbar-nav a::after {
+.nav-pills .nav-link.active {
+    background-color: transparent;
+}
+
+.nav-pills .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
@@ -26,18 +29,9 @@ nav .navbar-nav a::after {
     transition: width 0.3s ease;
 }
 
-nav .navbar-nav a:hover::after {
-    width: 50%;
+.nav-pills .nav-link.active::after {
+    width: 60%;
 }
-
-nav .deep-menu li {
-    display: none !important;
-}
-
-nav .deep-menu:hover li {
-    display: inline-block !important;
-}
-
 
 .bg-image {
     background-image: url('imgs/hero-bg.jpg');
