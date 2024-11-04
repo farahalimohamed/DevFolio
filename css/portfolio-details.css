@@ -8,19 +8,15 @@ nav {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.nav-pills .nav-link.active::after {
+.nav-pills .nav-link:hover::after {
     content: '';
     position: absolute;
-    width: 0;
+    width: 60%;
     height: 2px;
     bottom: 0;
     left: 8px;
     background-color: #fff;
     transition: width 0.3s ease;
-}
-
-.nav-pills .nav-link.active:hover::after {
-    width: 60%;
 }
 
 .portfolio-details {
